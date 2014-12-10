@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "moederbord"
+    },
+    {
+        "id": 2,
+        "name": "processor"
+    },
+    {
+        "id": 3,
+        "name": "voeding"
+    },
+    {
+        "id": 4,
+        "name": "behuizing"
+    },
+    {
+        "id": 5,
+        "name": "grafische kaart"
+    },
+    {
+        "id": 6,
+        "name": "optisch"
+    },
+    {
+        "id": 7,
+        "name": "RAM"
+    },
+    {
+        "id": 8,
+        "name": "harde schijf"
+    }
+]
