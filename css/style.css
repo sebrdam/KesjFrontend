@@ -1,89 +1,29 @@
-body {
-    padding-top: 70px;
-}
-button {
-    width: 10em;
-    height: 10em;
-    margin: 50px;
-    background: url('../img/components/case_img.png') no-repeat;}
-footer {
-    background-color: #444444;
-    height: 50px;
-    margin-top: 70px;
-    color: #fff;
-    text-align: center;
-    line-height: 50px;
-}
-    footer p {
-        margin: 0;
-        padding: 0;
-    }
-dl {
-    width: 250px;
-}
-dl dt,
-dl dd {
-    display: inline-block;
-    float: left;
-    width: 50%;
-}
-.glyphicon { margin-right:5px; }
-.thumbnail
-{
-    margin-bottom: 20px;
-    padding: 0px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-
-}
-.thumbnail img {
-    width: 150px;
-    width: 150px;
-    padding: 10px;
-}
-.item.list-group-item
-{
-    float: none;
-    width: 100%;
-    background-color: #fff;
-    margin-bottom: 10px;
+.component-grid .btn-lg {
+	width: 200px; 
+	height: 200px;
+	position: relative;
 }
 
-.item.list-group-item .list-group-image
-{
-    margin-right: 10px;
-}
-.item.list-group-item .thumbnail
-{
-    margin-bottom: 0px;
-}
-.item.list-group-item .caption
-{
-    padding: 9px 9px 0px 9px;
-}
-.item.list-group-item:nth-of-type(odd)
-{
-    background: #eeeeee;
+.component-grid  .row {
+	margin: 50px 0;
 }
 
-.item.list-group-item:before, .item.list-group-item:after
-{
-    display: table;
-    content: " ";
+img.component_thumb {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	margin-top: -75px;
+	margin-left: -75px;
+	padding: 20px;
 }
 
-.item.list-group-item img
-{
-    float: left;
-}
-.item.list-group-item:after
-{
-    clear: both;
-}
-.list-group-item-text
-{
-    margin: 0 0 11px;
+.component-name {
+	position: absolute;
+	bottom: 10px;
+	width: calc(100% - 32px);
 }
 
-
+.component-name span {
+	text-align: center;
+}
+.top-buffer { margin-top:20px; }
