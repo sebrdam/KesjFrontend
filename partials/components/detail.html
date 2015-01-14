@@ -1,0 +1,48 @@
+<div ng-repeat="item in list | filter:{'id': componentId}">
+	<div class="container">
+		<div class="row">
+			<button back>Back</button>
+			<div id="products" class="row list-group">
+				<div class="item  col-xs-12 col-lg-12 list-group-item">
+					<div class="thumbnail">
+						<img class="group list-group-image" ng-src="{{item.details.img_url}}" alt="">
+						<div class="caption">
+							<div class="row">
+								<div class="col-md-9">
+									<h4 class="group inner list-group-item-heading"><strong>Titel: </strong>{{item.name}}</h4>
+									<p class="group inner list-group-item-text"><strong>Omschrijving: </strong><br/>{{item.details.description}}</p>
+								</div>
+							</div>
+							<div class="row top-buffer">
+								<div class="col-md-5">
+									<div class="specs">
+										<dl>
+											<dt>Prijs: </dt>
+											<dd>&euro; {{item.details.price}}</dd>
+											<dt>Bouwvorm: </dt>
+											<dd>{{item.details.construction}}</dd>
+											<dt>Vermogen</dt>
+											<dd>{{item.details.power}}</dd>
+										</dl>
+									</div>
+								</div>
+								<div class="col-md-5">
+									<div class="specs">
+										<dl>
+											<dt>Certificaat</dt>
+											<dd>{{item.details.certificate}}</dd>
+											<dt>Garantie: </dt>
+											<dd>{{item.details.warranty}}</dd>
+											<dt>Koeler: </dt>
+											<dd>{{item.details.cooler}}</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,43 +1,27 @@
-/**
- * Created by kbos on 10-12-2014.
- */
-'use strict';
-
-// App Module: the name AngularStore matches the ng-app attribute in the main <html> tag
-// the route provides parses the URL and injects the appropriate partial page
-var kesjApp = angular.module('KESJ', []).
-    config(['$routeProvider', function($routeProvider) {
-        $routeProvider.
-            when('/components', {
-                templateUrl: 'partials/components.html',
-                controller: componentsController
-            }).
-            when('/products/:productSku', {
-                templateUrl: 'partials/product.htm',
-                controller: storeController
-            }).
-            when('/cart', {
-                templateUrl: 'partials/shoppingCart.htm',
-                controller: storeController
-            }).
-            otherwise({
-                redirectTo: '/store'
-            });
-    }]);
-
-// create a data service that provides a store and a shopping cart that
-// will be shared by all views (instead of creating fresh ones for each view).
-kesjApp.factory("DataService", function () {
-
-    // create store
-    var myStore = new store();
-
-    // create shopping cart
-    var myCart = new shoppingCart("AngularStore");
-
-    // return data object with store and cart
-    return {
-        store: myStore,
-        cart: myCart
+/** App Initiator **/
+var app = angular.module("KESJ", ['ngRoute', 'angular.filter']);
+ 
+/** Create multiple rows for Bootstrap Grid **/
+app.filter('array', function() {
+    return function(arrayLength) {
+		if(!isNaN(arrayLength)) {
+			arrayLength = Math.ceil(arrayLength);
+			var arr = new Array(arrayLength), i = 0;
+			for (; i < arrayLength; i++) {
+				arr[i] = i;
+			}
+			return arr;
+		}
     };
 });
+
+app.directive('back', ['$window', function($window) {
+	return {
+		restrict: 'A',
+		link: function (scope, elem, attrs) {
+			elem.bind('click', function () {
+				$window.history.back();
+			});
+		}
+	};
+}]);

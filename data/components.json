@@ -1,34 +1,50 @@
 [
     {
         "id": 1,
-        "name": "moederbord"
+        "type": "motherboard",
+		"name": "Moederbord",
+		"description": "Tekst over moederbord"
     },
     {
         "id": 2,
-        "name": "processor"
+        "type": "cpu",
+		"name": "Processor",
+		"description": "Tekst over processor"
     },
     {
         "id": 3,
-        "name": "voeding"
+        "type": "powersupply",
+		"name": "Voeding",
+		"description": "Tekst over voeding"
     },
     {
         "id": 4,
-        "name": "behuizing"
+        "type": "case",
+		"name": "Behuizing",
+		"description": "Tekst over behuizing"
     },
     {
         "id": 5,
-        "name": "grafische kaart"
+        "type": "gpu",
+		"name": "Video Kaart",
+		"description": "Tekst over video kaart"
     },
     {
         "id": 6,
-        "name": "optisch"
+        "type": "optic",
+		"name": "Optische Drive",
+		"description": "Tekst over optische schijf"
     },
     {
         "id": 7,
-        "name": "RAM"
+        "type": "ram",
+		"name": "Intern Geheugen",
+		"description": "Tekst over geheugen"
     },
     {
         "id": 8,
-        "name": "harde schijf"
+        "type": "hdd",
+		"name": "Harde Schijf",
+		"description": "Tekst over hdd"
     }
 ]
